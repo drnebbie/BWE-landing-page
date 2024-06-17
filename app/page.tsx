@@ -1,113 +1,229 @@
-import Image from "next/image";
+import Script from 'next/script'
+import React from 'react'
 
-export default function Home() {
+
+const home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <div>
+      <>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <title>Beyond Web Expectation</title>
+        <meta name="deScription" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Beyond Web Expectation Coming Soon" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         />
-      </div>
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="assets/img/android-chrome-192x192.png"
+        />
+        {/* Place favicon.ico in the root directory */}
+        {/* ========================= CSS here ========================= */}
+        <link rel="stylesheet" href="assets/css/bootstrap-4.5.0.min.css" />
+        <link rel="stylesheet" href="assets/css/lineicons.css" />
+        <link rel="stylesheet" href="assets/css/animate.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        {/*[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]*/}
+        {/* ========================= main start ========================= */}
+        <main className="main-06">
+          {/* header start  */}
+          <div className="header header-06">
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-md-4">
+                  <a href="" className="logo">
+                    {" "}
+                    <img src="assets/img/transparant logo.png" alt="logo" />
+                  </a>
+                </div>
+                <div className="col-md-8">
+                  <div className="header-right text-right">
+                    <a href="mailto:mr.b.nhacundela@gmail.com">
+                      Say hello! mr.b.nhacundela@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* header end  */}
+          {/* ========================= main-wrapper start ========================= */}
+          <div className="main-wrapper demo-06">
+            {/* hero-area start  */}
+            <div className="hero-area">
+              <div className="container">
+                <div className="row">
+                  <div className="col-xl-12">
+                    {/* heading start  */}
+                    <div className="heading">
+                      <h1 className="text-white wow fadeInUp" data-wow-delay=".2s">
+                        We Are <br /> Coming Soon
+                      </h1>
+                    </div>
+                    {/* heading end  */}
+                  </div>
+                  <div className="col-xl-7 col-lg-7">
+                    {/* countdown start  */}
+                    <div
+                      className="wow fadeInRight"
+                      data-wow-delay=".4s"
+                      data-countdown="2024/07/28"
+                    />
+                    {/* countdown end  */}
+                  </div>
+                  <div className="col-xl-5 col-lg-5">
+                    {/* desc strat  */}
+                    <p className="wow fadeInLeft" data-wow-delay=".4s">
+                      We're strong believers that the best solutions come from
+                      gathering new insights and pushing conventional boundaries.
+                    </p>
+                    {/* desc end  */}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* hero-area end  */}
+            {/* team-area start  */}
+            <div className="team-area">
+              <div className="container">
+                <div className="row">
+                  <div className="col-xl-9">
+                    {/* section-title start  */}
+                    <div className="section-title">
+                      <h1 className="wow fadeInUp" data-wow-delay=".2s">
+                        Our Real Hero
+                      </h1>
+                      <h2 className="wow fadeInUp" data-wow-delay=".4s">
+                        Every month, amounts of Projects{" "}
+                        <br className="d-none d-lg-block" /> handover by this genius
+                        team.
+                      </h2>
+                    </div>
+                    {/* section-title end  */}
+                  </div>
+                </div>
+                {/* team-wrapper start  */}
+                <div className="team-wrapper">
+                  {/* team-item start  */}
+                  <div className="team-item wow fadeInUp" data-wow-delay=".2s">
+                    <div className="team-img">
+                      <img
+                        style={{ height: 371 }}
+                        src="assets/img/pxArt.png"
+                        alt="a photo of Ben"
+                      />
+                      <ul className="social-links">
+                        <li>
+                          <a href="https://x.com/bennhacundela">
+                            <i className="lni lni-twitter-filled" />
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            style={{ width: 20, height: 12 }}
+                            href="https://www.upwork.com/freelancers/benn23"
+                          >
+                            <img src="/assets/img/upwork.svg" />
+                          </a>
+                        </li>
+                        {/* <li><a href="#"><i class="lni lni-instagram-original"></i></a></li> */}
+                        <li>
+                          <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">
+                            <i className="lni lni-linkedin" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="team-info">
+                      <h4>Ben Nhacundela</h4>
+                      <p>Software Engineer</p>
+                    </div>
+                  </div>
+                  {/* team-item end  */}
+                  {/* team-item start  */}
+                  <div className="team-item wow fadeInUp" data-wow-delay=".6s">
+                    <div className="team-img">
+                      <img
+                        style={{ height: 371 }}
+                        src="assets/img/nigelpixel.png"
+                        alt=""
+                      />
+                      <ul className="social-links">
+                        <li>
+                          <a href="#">
+                            <i className="lni lni-facebook-filled" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="lni lni-twitter-filled" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="lni lni-instagram-original" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="lni lni-linkedin" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="team-info">
+                      <h4>Nigel Xeno</h4>
+                      <p>UX/UI Designer |Animator</p>
+                    </div>
+                  </div>
+                  {/* team-item end  */}
+                </div>
+                {/* team-wrapper end  */}
+              </div>
+            </div>{" "}
+            {/* end container  */}
+            {/* team-area end  */}
+          </div>
+          {/* ========================= main-wrapper end ========================= */}
+          {/* footer start  */}
+          <div className="footer">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-7"></div>
+                <div className="col-md-5">
+                  <div className="credit wow fadeInRight" data-wow-delay=".4s">
+                    <p>
+                      Designed by <span>Nigel</span> and Developed by <span>Ben</span>{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* footer end  */}
+        </main>
+        {/* ========================= main end ========================= */}
+        {/* ========================= JS here ========================= */}
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <Script src="assets/js/vendor/modernizr-3.5.0.min.js"></Script>
+        <Script src="assets/js/vendor/jquery-3.5.1.min.js"></Script>
+        <Script src="assets/js/popper.min.js"></Script>
+        <Script src="assets/js/bootstrap-4.5.0.min.js"></Script>
+        <Script src="assets/js/countdown.js"></Script>
+        <Script src="assets/js/wow.min.js"></Script>
+        <Script src="assets/js/main.js"></Script>
+      </>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+    </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+  )
 }
+
+export default home
+
